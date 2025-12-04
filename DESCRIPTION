@@ -1,8 +1,9 @@
 Package: rent
 Title: Analyse basée sur la règle de Rent
 Version: 0.1.0
-Authors@R: person("Tchongwang", "Nom", email = "email@exemple.com", role = c("aut", "cre"))
+Authors@R: person("Tchongwang", "Nom", email = "tchongwangbakayoko619@gmail.com", role = c("aut", "cre"))
 Description: Implémentation de la règle de Rent pour des problèmes d'ingénierie en microélectronique.
 License: MIT
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 7.3.3
