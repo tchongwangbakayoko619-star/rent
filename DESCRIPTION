@@ -1,6 +1,6 @@
 Package: rent
 Title: Analyse basée sur la règle de Rent
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: person("Tchongwang", "Nom", email = "tchongwangbakayoko619@gmail.com", role = c("aut", "cre"))
 Description: Implémentation de la règle de Rent pour des problèmes d'ingénierie en microélectronique.
 License: MIT
