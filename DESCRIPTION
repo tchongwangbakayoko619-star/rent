@@ -1,8 +1,13 @@
 Package: rent
-Title: Analyse basée sur la règle de Rent
+Title: Analysis Based on Rent's Rule
 Version: 0.1.1
-Authors@R: person("Tchongwang", "Nom", email = "tchongwangbakayoko619@gmail.com", role = c("aut", "cre"))
-Description: Implémentation de la règle de Rent pour des problèmes d'ingénierie en microélectronique.
+Authors@R: person("Tchongwang", "Nathanael", 
+    email = "tchongwangbakayoko619@gmail.com", 
+    role = c("aut", "cre"))
+Description: Implementation of Rent's rule for engineering problems in 
+    microelectronics. Provides tools to estimate Rent parameters, predict 
+    pin counts, and visualize the log–log relationship between logic blocks 
+    and external pins.
 License: MIT
 Encoding: UTF-8
 LazyData: true

@@ -2,20 +2,48 @@
 % Please edit documentation in R/rent_model.R
 \name{rent_pins}
 \alias{rent_pins}
-\title{Calcul du nombre de broches selon la règle de Rent}
+\title{Compute the Number of External Pins Using Rent's Rule}
 \usage{
 rent_pins(G, k, p)
 }
 \arguments{
-\item{G}{nombre de blocs logiques}
+\item{G}{Numeric vector. Number of logic blocks in the circuit.}
 
-\item{k}{constante de proportionnalité}
+\item{k}{Numeric scalar. Proportionality constant of Rent's rule.}
 
-\item{p}{exposant de Rent}
+\item{p}{Numeric scalar. Rent's exponent, controlling interconnection complexity.}
 }
 \value{
-nombre de broches externes
+A numeric vector giving the estimated number of external pins
+  corresponding to each value of \code{G}.
 }
 \description{
-Calcul du nombre de broches selon la règle de Rent
+This function calculates the expected number of external pins required
+for a digital circuit based on **Rent's rule**, a widely used empirical
+model in microelectronics and VLSI design.
+}
+\details{
+Rent's rule expresses the relationship between the number of logic blocks
+in a system and the number of external connections (pins) needed to
+interface with the rest of the circuit. It is commonly used to estimate
+interconnection complexity, guide packaging decisions, and support early
+architectural planning.
+
+The rule is defined as:
+\deqn{P = k \cdot G^{p}}
+where:
+\itemize{
+  \item \eqn{P} is the number of external pins,
+  \item \eqn{k} is a proportionality constant related to the architecture,
+  \item \eqn{G} is the number of logic blocks,
+  \item \eqn{p} is Rent's exponent, typically between 0 and 1.
+}
+}
+\examples{
+# Basic usage
+rent_pins(G = 10000, k = 4.5, p = 0.6)
+
+# Vectorized input
+rent_pins(G = c(1e4, 2e4, 5e4), k = 4.5, p = 0.6)
+
 }
